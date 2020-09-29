@@ -1,0 +1,237 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="keywords" content="footer, address, phone, icons" /><!--new!-->
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+ <link href="form.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+
+<style>
+body{
+background-color:#ffedcc;
+}
+h1{
+font-family: 'Dancing Script', cursive;
+font-size:400%;
+}
+h4{
+margin:0.5%;
+}
+@keyframes bb {
+  from {border-bottom:2px solid #FBD72B;}
+  to {border-bottom:2px solid #F9484A;}
+}
+@keyframes ab{
+from {right:0;top:-1px;}
+  to {right:0;top:-1px;}
+}
+@keyframes xy{
+from {border-bottom:2px solid #32CD32;}
+  to {border-bottom:2px solid #32CD32;}
+}
+.tb{
+border:none;
+height:5%;
+width:50%;
+margin:1% 0;
+margin-bottom:1%;
+padding:2.5%;
+font-size:140%;
+padding-left:0.5%;
+padding-bottom:2%;
+animation: bb 5s infinite;
+animation-direction: alternate;
+}
+.tb:hover{
+z-index:10;
+animation: xy 5s infinite;
+animation-direction: alternate;
+}
+.tb:focus{
+animation: ab 5s infinite;
+animation-direction: alternate;
+}
+::placeholder{
+font-size:100%;
+color:gray;
+}
+.mainform{
+border-radius:4px;
+padding:2% 2% 2% 3%;
+background-color:white;
+background: rgba(255,255,255);
+width:53%;
+text-align:left;
+text-align:left;
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border:1px solid black;
+  display: inline-block;
+}
+label{
+margin-bottom:0%;
+font-size:125%;
+}
+.s{
+height: 12px;
+width: 12px;
+margin:3px;
+border-radius: 50%;
+background-color: white;
+display: inline-block;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#p2{
+display:block;
+}
+</style>
+<script>
+function f1(){
+document.getElementById("one").style.background="blue";
+document.getElementById("two").style.background="white";
+document.getElementById("p2").style.display="none";
+}
+function f2(){
+document.getElementById("two").style.background="blue";
+document.getElementById("one").style.background="white";
+document.getElementById("p2").style.display="block";
+}
+</script>
+</head>
+<body>
+  <nav><!--Header!-->
+  <div class="logo">
+      <a href="home.html"><img src="logo.png" alt="Logo Image"></a>
+  </div>
+  <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+  <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">About Us</a></li>
+        <li><a href="index.html#sessionss">Sessions</a></li>
+        <li><a href="index.html#contactt">Contact Us</a></li>
+  </ul>
+</nav>
+<script src="nav.js"></script>
+<!--
+<div class="container">
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">-->
+<br><br>
+<center>
+<div class="mainform">
+<center>
+<h1>Session Registration form</h1>
+</center>
+<h4 style="padding:1%;">Want information on our session? <a href="home.html">Click here</a></h4>
+<br>
+</div>
+<br>
+<form>
+<div class="mainform">
+<h4>Name of Parent:<br></h4>
+&ensp;<input type="text" placeholder="Parent's Name" class="tb"><span class="focus-border"></span><br>
+</div><br>
+<div class="mainform">
+<h4>Email address:<br></h4>
+&ensp;<input type="text" placeholder="Your email" class="tb"><br>
+</div><br>
+<div class="mainform">
+<h4 style="margin-bottom:0.25%;">Phone number of Parent:<br></h4>
+&ensp;<input type="number" placeholder="Phone number" class="tb"><br>
+</div><br>
+<div class="mainform">
+<h4 style="margin-bottom:1%;">How many children will be attending? <br></h4>
+&ensp;&ensp;<span class="dot" onclick="f1();"><span id="one" class="s"></span></span>
+<label>1</label><br>
+&ensp;&ensp;<span class="dot" onclick="f2();"><span id="two" class="s"></span></span>
+<label>2</label><br>
+</div>
+<br>
+<div class="mainform">
+<h4>Name of child:<br></h4>
+&ensp;<input type="text" placeholder="Child's name" class="tb"><br><br>
+<h4 style="margin-bottom:0.25%;">Age of child:<br></h4>
+&ensp;<input type="number" placeholder="Child's age" class="tb"><br>
+</div><br>
+<div id="p2">
+<div class="mainform">
+<h4>Name of child:<br></h4>
+&ensp;<input type="text" placeholder="Child's name" class="tb"><br><br>
+<h4 style="margin-bottom:0.25%;">Age of child:<br></h4>
+&ensp;<input type="number" placeholder="Child's age" class="tb"><br><br>
+</div>
+</div>
+</form>
+</center>
+<!--</div>
+<div class="col-md-2"></div>
+<script src="jquery.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>-->
+<footer class="footer-distributed">
+  <div class="footer-left">
+      <img src="logo1.png">
+
+    <p class="footer-links">
+      <a href="index.html">Home</a>
+      |
+      <a href="team.html">About Us</a>
+      |
+      <a href="form.html">Sessions</a>
+      |
+      <a href="#">Contact us</a>
+    </p>
+    <p class="footer-company-name">Designed and developed with ❤️ by Ishika Gupta and Ayushya Shah</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+        <p>Mumbai, India</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+91 33-333333</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@abc.com">support@abc.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About the company</span>
+      We aim to teach the children about their very own Indian Culture through the priciples of Ramayana and Mahabharata.</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/theabcproject_/"><i class="fa fa-instagram"></i></a>
+      <!--<a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>!-->
+    </div>
+  </div>
+</footer>
+</body>
+</html>

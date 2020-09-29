@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="home.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="footer, address, phone, icons" /><!--new!-->
+    <link rel="stylesheet" href="nav.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+  </head>
+  <body>
+
+    <nav><!--Header!-->
+    <div class="logo">
+        <a href="home.html"><img src="logo.png" alt="Logo Image"></a>
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">About Us</a></li>
+        <li><a href="#sessionss">Sessions</a></li>
+        <li><a href="#contactt">Contact Us</a></li>
+    </ul>
+  </nav>
+  <script src="nav.js"></script>
+  <section id="about" class="slideshow-container" style="background-color:#fff;">
+    <center><div class="slideshow-container animated bounceInLeft"><!--Slider!-->
+      <div class="mySlides fade">
+        <img src="Slide1.PNG" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Slide2.PNG" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Slide3.PNG" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Slide4.PNG" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Slide1.PNG" style="width:100%">
+      </div>
+    </div>
+    <br>
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 6000); // Change image every 2 seconds
+    }
+    </script>
+  </section>
+
+    <section id="about" style="background-color:#fff6e5;">
+      <h1 style="font-size:400%;font-family:'dancing script',cursive;text-align:center;">About the Project</h1>
+      <div class="grid-flex1">
+        <div class="col1 col-image1" style="background-image:url(logo1.png);"></div>
+          <div class="col1 col-text1"style="height:40rem;">
+            <div class="Aligner-item">
+              <p><em><strong>ACKNOWLEDGE :</strong></em> The Mahabharata, regarded as the treasure of one’s life, teaches us how to live life in the most ethical yet the most optimal way. However, in the present days, people tend to label our culture as "backward". We all need to <em>ACKNOWLEDGE</em> the role our culture plays in our life from a young age. We aim to instill these very values in children.</p>
+              <p><em><strong>BELIEVE :</strong></em> Mahabharata is not just like any other tale. It speaks volumes about constructive living or so to say the 'Art of living', which is extremely important for the children today.  We want to make children <em>BELIEVE</em> in the importance of the morals and ethics in life, whose foundation is our dharma and Hindu culture.</p>
+              <p><em><strong>CONNECT :</strong></em> The Mahabharata enables children to understand the basic ethics that one should have in their life to lead it in an exemplary manner. We want to <em>CONNECT</em> with the children and CONNECT them to our culture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--<section id="about" style="background-color:#fff6e5;">
+        <h1 style="font-size:400%;font-family:'dancing script',cursive;text-align:center;">About the Project</h1>
+        <div class="grid-flex">
+          <div class="col"><img src="logo.png" class="imageDetails" style="float:left;width:80%;height:auto;"></div>
+            <div class="col col-text"style="height:40rem;">
+              <div class="Aligner-item">
+                <p><em><strong>ACKNOWLEDGE :</strong></em> The Mahabharata, regarded as the treasure of one’s life, teaches us how to live life in the most ethical yet the most optimal way. However, in the present days, people tend to label our culture as "backward". We all need to <em>ACKNOWLEDGE</em> the role our culture plays in our life from a young age. We aim to instill these very values in children.</p>
+                <p><em><strong>BELIEVE :</strong></em> Mahabharata is not just like any other tale. It speaks volumes about constructive living or so to say the 'Art of living', which is extremely important for the children today.  We want to make children <em>BELIEVE</em> in the importance of the morals and ethics in life, whose foundation is our dharma and Hindu culture.</p>
+                <p><em><strong>CONNECT :</strong></em> The Mahabharata enables children to understand the basic ethics that one should have in their life to lead it in an exemplary manner. We want to <em>CONNECT</em> with the children and CONNECT them to our culture.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>!-->
+    <section id="about">
+    <h1 style="font-size:400%;font-family:'dancing script',cursive;text-align:center;">Our Team</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <center><img class="circle" src="https://static.wixstatic.com/media/bd72be_9aee1bba7a344b14b8afd8c05d792889~mv2.jpeg/v1/crop/x_0,y_160,w_960,h_960/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01/WhatsApp%20Image%202020-08-03%20at%2017_04_42%20(1.webp" alt="Founder" style="width:50%">
+              <div class="container">
+                <h2>Kanupriya Agarwal</h2>
+                <p class="title">Founder</p>
+                <!--<p><button class="button">Contact</button></p>!-->
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <center><img class="circle" src="https://static.wixstatic.com/media/bd72be_1f6e63a932ef4cd68773e05e1e565f05~mv2.jpeg/v1/crop/x_99,y_0,w_398,h_398/fill/w_240,h_240,al_c,q_80,usm_0.66_1.00_0.01/WhatsApp%20Image%202020-08-03%20at%2017_04_41_jp.webp" alt="Founder" style="width:50%">
+                <div class="container">
+                  <h2>Diya Rajpal</h2>
+                  <p class="title">Founder</p>
+                  <!--<p><button class="button">Contact</button></p>!-->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <center><button><a href="team.html" style="text-decoration:none;color:white;">Meet the Team!  <strong> >></strong></a></button>
+    </section>
+    <section id="about" style="background-color:#fff6e5;">
+      <h1 style="font-size:400%;font-family:'dancing script',cursive;text-align:center;">Purpose</h1>
+      <div class="grid-flex1">
+        <div class="col1 col-image1" style="background-image: url('https://image.shutterstock.com/image-vector/illustration-india-background-showing-incredible-260nw-783253891.jpg');"></div>
+          <div class="col1 col-text1"><!--style="height:25rem;"!-->
+            <div class="Aligner-item"><!--style="width:80%;"!-->
+              <ul>
+              <li>Children, as the nation-builders of tomorrow, need to learn about their roots and culture, only then can they grow up with the spirit of appreciating and preserving cultural diversity and unity.</li><br>
+              <li>Knowing our roots from a young age is important.</li><br>
+              <li>Good morals enable us to become good humans.</li><br>
+              <li>They help us develop our value and belief system.</li><br>
+              <li>Moral beliefs of faith, integrity, freedom, personal responsibility, strong work ethics, and values of selflessness are desirable traits as a global citizen of tomorrow.</li><br>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 style="font-size:400%;font-family:'dancing script',cursive;text-align:center;">Importance of ABC</h1>
+      <div class="grid-flex1">
+        <div class="col1 col-image1" style="background-image: url(https://images.sadhguru.org/sites/default/files/media_files/39614-i-love-india-indian-culture_1.jpg);"></div>
+          <div class="col1 col-text1"><!--style="height:20rem;"!-->
+            <div class="Aligner-item"><!-- style="width:70%;"!-->
+              <ul>
+                <li>Nowadays, we idealize Western culture and have begun isolating our own culture.</li><br>
+                <li>At a young age, children have a very impressionable and mouldable personality.</li><br>
+                <li>They absorb everything they hear and see. It is important for them to absorb these morals and values at this age because our culture offers a sense of belonging which binds us to our roots.</li><br>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about"  style="background-color:#ffedcc">
+      <h1 style="font-size:400%;font-family:'dancing script',cursive;text-align:center;">Sessions</h1>
+    <section id="sessionss" class='container12'>
+      <div class='price-plan'>
+        <p class='price'><sup>Rs</sup>400<sub>/mo</sub></p>
+        <ul class='price-points'>
+          <li>1 month</li>
+          <li>4 Sessions</li>
+          <li>Limited seats</li>
+          <li>Covers Mahabharata</li>
+        </ul>
+        <button class='polyFirst poly2'><a href="form.html" target="_blank" style="text-decoration:none;color:white;">Sign Me Up!</a></button>
+      </div>
+
+      <div class='price-plan'>
+        <p class='price'><sup>Rs</sup>800<sub>/mo</sub></p>
+        <ul class='price-points'>
+          <li>1 months</li>
+          <li>8 Sessions</li>
+          <li>Unlimited access</li>
+          <li>Covers All</li>
+        </ul>
+        <button class='polyFirst poly2'><a href="form.html" target="_blank" style="text-decoration:none;color:white;">Sign Me Up!</a></button>
+      </div>
+    </section>
+  </section>
+    <section class="container23" id="contactt">
+          <div class="wrapper">
+                <div class="company-info">
+                    <!--<h3>Abc Project</h3>
+                    <ul>
+                        <li><i class="fa fa-road"></i> Mumbai,India</li>
+                        <li><i class="fa fa-phone"></i> (555) 555 555</li>
+                        <li><i class="fa fa-envelope"></i> abc@gmail.com</li>
+                    </ul>!-->
+                </div>
+                <div class="contact">
+                    <h3>Have a question in mind? Feel free to reach us.</h3>
+                    <form>
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name">
+                        </p>
+                        <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone">
+                        </p>
+                        <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5"></textarea>
+                        </p>
+
+                        <p class="full">
+                            <button>Submit</button>
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <footer class="footer-distributed">
+    			<div class="footer-left">
+              <img src="logo1.png">
+
+    				<p class="footer-links">
+    					<a href="home.html">Home</a>
+    					|
+    					<a href="team.html">About Us</a>
+    					|
+    					<a href="form.html">Sessions</a>
+    					|
+    					<a href="#">Contact us</a>
+    				</p>
+    				<p class="footer-company-name">Designed and developed with ❤️ by Ishika Gupta and Ayushya Shah</p>
+    			</div>
+
+    			<div class="footer-center">
+    				<div>
+    					<i class="fa fa-map-marker"></i>
+    					  <p>Mumbai, India</p>
+    				</div>
+
+    				<div>
+    					<i class="fa fa-phone"></i>
+    					<p>+91 33-333333</p>
+    				</div>
+    				<div>
+    					<i class="fa fa-envelope"></i>
+    					<p><a href="mailto:support@abc.com">support@abc.com</a></p>
+    				</div>
+    			</div>
+    			<div class="footer-right">
+    				<p class="footer-company-about">
+    					<span>About the company</span>
+    					We aim to teach the children about their very own Indian Culture through the priciples of Ramayana and Mahabharata.</p>
+    				<div class="footer-icons">
+    					<a href="#"><i class="fa fa-facebook"></i></a>
+    					<a href="#"><i class="fa fa-twitter"></i></a>
+    					<a href="https://www.instagram.com/theabcproject_/"><i class="fa fa-instagram"></i></a>
+    					<!--<a href="#"><i class="fa fa-linkedin"></i></a>
+    					<a href="#"><i class="fa fa-youtube"></i></a>!-->
+    				</div>
+    			</div>
+    		</footer>
+        <!--<hr style="margin:0;">
+	<footer style="background:orange;padding:1%;font-size:180%;line-height:110%;">
+	<br>
+	<div class="grid-flex">
+	<div class="col">
+	<center>
+	<img src="logo1.png" style="width:30%;"><br><br>
+	<ion-icon name="logo-instagram" size="large"></ion-icon>
+	<ion-icon name="logo-facebook" size="large"></ion-icon>
+	<ion-icon name="logo-twitter" size="large"></ion-icon>
+	</center>
+	</div>
+	<div class="col">
+	<div class="grid-flex">
+	<div class="col">
+	</div>
+	<div class="col">
+	Sitemap<br><br>
+	<a>Home<br></a>
+	<a>About the team<br></a>
+	<a>About the project<br></a>
+	<a>Purpose<br></a>
+	<a>Importance<br></a>
+	<a>Sessions<br></a>
+	<a>Register<br></a>
+	<a>Contact us<br></a>
+	</div>
+	<div class="col">
+	</div>
+	</div>
+	</div>
+	</div>
+	<br>
+	<hr>
+	<p style="font-size:50%;">
+	Designed and developed with ❤️ by Ishika Gupta and Ayushya Shah
+	</p>
+	</footer>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>!-->
+
+  </body>
+</html>

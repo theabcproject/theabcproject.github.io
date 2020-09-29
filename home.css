@@ -1,0 +1,687 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:'roboto', sans-serif;
+  margin:0;
+  padding: 0;
+  line-height:140%;
+  font-size:14px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+nav{
+    height: 5rem;
+    width: 100%;
+    background-color:#f2f2f2; /*rgba(0,162,255,0.5);*/
+    display: flex;
+    /*position: fixed;*/
+    /*z-index: 10;*/
+    font-family:oswald,cursive;
+    font-size:17px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+/*Styling logo*/
+.logo{
+    padding:1vh 1vw;
+    text-align: center;
+}
+.logo img {
+    height: 4rem;
+    width: 4rem;
+}
+
+/*Styling Links*/
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    color:#ffa900;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+    color: #ff9a00;
+}
+.nav-links li {
+    position: relative;
+}
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: orange;
+    margin: 5px;
+    transition: all 0.6s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        /*z-index: 3;*/
+        height:6rem;
+    }
+    .hamburger{
+        display:block;
+        position:absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background-color:#f2f2f2;
+        height: 100vh;
+        height:100%;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1.2s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+    .slideshow-container{
+      /*z-index:3;*/
+    }
+    .logo{
+      margin-top:3%;
+
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+.mySlides {display: none;}
+/*img {vertical-align: middle;}*/
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  height:auto;
+  /*padding-top:2%;*/
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+
+
+
+/*about the project*/
+#about{
+  background-color:#f2f2f2;
+  padding:3%;
+  /*margin:0.3%;/*ye accha lagega,I swear*/
+}
+.col-text1 {
+  height:20em;
+}
+.grid-flex1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+.col1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  width: 60%;
+}
+.col-image1 {
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+/*a{
+  color:white;
+}*/
+
+@media (max-width: 1000px) {
+  .grid-flex1 {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+   }
+  .col1 {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text1 div p {
+    padding: 0.5em;
+  }
+  .Aligner-item {
+    width: 100%;
+  }
+  .col-text1 {
+    height:70em;
+  }
+  h1{
+    line-height:105%;
+  }
+  .imageDetails{
+  display:none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.center {
+	text-align: center;
+}
+
+/*Flexbox Cards*/
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*.container {
+  padding: 0 16px;
+}*/
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size:120%;
+}
+button{
+  background:linear-gradient(45deg,#ff9a00, #ff5d00);
+  color:white;
+  padding:2% 5%;
+  border-radius:96px;
+  border:1px solid #f2f2f2;
+  font-size:120%;
+  margin:1%;
+}
+button:hover{
+  background-color:#ff9a00;
+  transform:scale(1.05);
+  transition-duration: 0.7s;
+  color:black;
+}
+
+.circle{
+  margin-top:3%;
+  border-radius:50%;
+}
+
+
+
+
+
+button{
+background:linear-gradient(45deg,#ff9a00, #ff5d00);
+color:white;
+padding:2% 5%;
+border-radius:96px;
+border:1px solid #f2f2f2;
+font-size:110%;
+margin:1%;
+}
+button:hover{
+  background-color:#ff9a00;
+  transform:scale(1.05);
+  transition-duration: 0.7s;
+  color:black;
+}
+
+
+
+/*Sessions*/
+.container12 {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+  /*margin-top:20px;*/
+  background-color:#ffedcc;
+}
+
+.price-plan {
+  background-color:#fff6e5;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	border-radius: 25px;
+	flex: 1;
+	padding: 0 30px 30px;
+	margin: 2%;
+	min-width: 200px;
+	max-width: 300px;
+  text-align: center;
+}
+.price-points {
+  list-style-type:none;
+  padding:0px;
+}
+
+.price-points li {
+  padding:10px 0px;
+}
+
+.price-points li:not(:last-of-type) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  font-size:32px;
+  font-weight:300;
+}
+
+.price sub,
+.price sup {
+  font-size:16px;
+  font-weight:100;
+}
+
+ /*First Row*/
+.polyFirst {
+  width: 130px;
+  padding: 10px 10px;
+  border: none;
+  /*background:linear-gradient(45deg,#ff9a00, #ff5d00);*/
+  background-color:#e5eeff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+.polyFirst:hover {
+  background-size: 150%;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+
+.polyFirst:active {
+  transform:scale(1.15);
+  transition-duration: 0.1s;
+}
+
+.poly2 {
+  background-position-x: 15%;
+}
+
+
+
+
+/*contact*/
+.container23 {
+    /*max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;*/
+    padding: 1em;
+    background-color: #f2f2f2;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.company-info {
+    background-image: url('https://images.unsplash.com/photo-1526293542304-0afdf63016d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: black;
+}
+.company-info h3, .company-info ul {
+    text-align: left;
+    margin: 0 1ren 0;
+}
+.contact {
+    background: #F2f2f2;
+}
+/* FORM STYLES */
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.contact form label{
+    display: block;
+}
+.contact form p{
+    margin: 0;
+}
+.contact form .full {
+    grid-column: 1 / 3;
+}
+.contact form button, .contact form input, .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid orange;
+}
+
+.contact form button {
+    background: orange;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact form button:hover, .contact form button:focus{
+    background:linear-gradient(45deg,#ff9a00,#ff5d00) ;
+    color: white;
+    outline: 0;
+    transition: background-color 0.5s ease-out;
+}
+
+/* LARGE SCREENS */
+@media(min-width: 700px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper > *{
+        padding: 2em;
+    }
+
+    .company-info h3, .company-info ul, .brand {
+        text-align: left;
+    }
+}
+
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:1400px){
+	footer { position: static; }
+}
+
+
+.footer-distributed{
+	background:linear-gradient(#ffeacc,#ffb84c,#ff9a00);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	/*margin-top: 80px;*/
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 50%;
+}
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;/*#8f9296;*/
+	font-size: 13px;
+	font-weight: lighter;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	/*background-color: #0b65ff;*/ /*#33383b;*/
+	color: #000;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #000;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	/*color:  #e0ac1c;*/
+  color:black;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color: #000; /*#92999f*/;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #000;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	/*background-color:  #33383b;*/
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 900px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		/*margin-bottom: 40px;*/
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
