@@ -1,4 +1,3 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 * {
   box-sizing: border-box;
 }
@@ -191,11 +190,10 @@ nav{
 /*about the project*/
 #about{
   background-color:#f2f2f2;
-  padding:3%;
-  /*margin:0.3%;/*ye accha lagega,I swear*/
+  padding: 3%;
 }
 .col-text1 {
-  height:20em;
+  height:20rem;
 }
 .grid-flex1 {
   display: -webkit-box;
@@ -229,26 +227,24 @@ nav{
   justify-content: center;
 }
 .Aligner-item {
-  width: 60%;
+  width: 50%;
 }
 .col-image1 {
   background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;
 }
-/*a{
-  color:white;
-}*/
 
 @media (max-width: 1000px) {
   .grid-flex1 {
-    height: 40em;
+    height:50rem;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column;
    }
   .col1 {
     order:vertical;
+    padding:2%;
   }
   .col-left {
     -webkit-box-ordinal-group:0;
